@@ -1,14 +1,92 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+@keyframes loading {
+    from {
+        right: 84px;
+    }
+    to {
+        right: 80px;
+    }
+}
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
+.theme-menu__button:disabled:before {
+    content: "▶";
+    position: absolute;
+    right: 20px;
+    opacity: 0.6;
+    animation: loading 0.5s infinite ease-in-out alternate;
+}
 
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
+.core {
+    fill: transparent;
+    transition: fill 0s 0.03s;
+}
+
+.main-body {
+    fill: transparent;
+    transition: fill 0.3s;
+}
+
+.contour {
+    transition: fill 0.1s;
+}
+
+.like-icon:hover .core {
+    fill: var(--heart-contour-color);
+    transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+    fill: var(--heart-contour-color);
+    transition: fill 0.3s 0.05s;
+}
+
+.like-icon:active .core {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s 0.03s;
+}
+
+.like-icon:active .main-body {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .core {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s 0.03s;
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s 0.06s;
+}
+
+@keyframes increase {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.like-icon.is-liked .heart {
+    transform-origin: center;
+    animation: increase 0.3s 0.1s ease-in backwards;
+}
+
+@keyframes spark {
+    from {
+        fill: none;
+    }
+    to {
+        fill: var(--heart-sparks);
+    }
+}
+
+.like-icon.is-liked .sparks {
+    animation: spark 0.3s 0.3s ease-in backwards;
+}

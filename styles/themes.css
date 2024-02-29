@@ -1,3 +1,52 @@
+:root.theme-dark {
+    --inter-width-text: 'wght' 405;
+    --inter-width-text-min: 'wght' 493;
+    --bg-color: rgba(0, 0, 0, 1);
+    --bg-color-animation: rgb(159, 248, 166);
+    --border-color: rgba(0, 204, 20, 1);
+    --focus-color: rgba(0, 204, 20, 1);
+    --accent-color: rgba(0, 204, 20, 1);
+    --heart-contour-color: rgba(0, 204, 20, 1);
+    --heart-body: rgba(255, 255, 255, 1);
+    --label-color: rgba(0, 0, 0, 1);
+    --gradient-bg-left: 0, #000 0 2px, transparent 2px 4px;
+    --gradient-bg-top: 90deg, #000 0 2px, transparent 2px 4px;
+    --gradient-bg-all: #007f0c, #004306;
+}
+
+:root.theme-light {
+    --inter-width-text: 'wght' 339;
+    --inter-width-text-min: 'wght' 353;
+    --bg-color: rgba(255, 255, 255, 1);
+    --bg-color-animation: rgba(255, 255, 255, 1);
+    --border-color: rgba(0, 0, 0, 1);
+    --focus-color: rgba(0, 0, 0, 1);
+    --label-color: rgba(255, 255, 255, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --heart-contour-color: rgba(0, 0, 0, 1);
+    --gradient-bg-left: 0, #d3d3d3 0 2px, transparent 2px 4px;
+    --gradient-bg-top: 90deg, #d3d3d3 0 2px, transparent 2px 4px;
+    --gradient-bg-all: #e7e7e7 0.01%, #1a1a1a;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --inter-width-text: 'wght' 405;
+        --inter-width-text-min: 'wght' 493;
+        --bg-color: rgba(0, 0, 0, 1);
+        --border-color: rgba(0, 204, 20, 1);
+        --focus-color: rgba(0, 204, 20, 1);
+        --bg-color-animation: rgb(159, 248, 166);
+        --accent-color: rgba(0, 204, 20, 1);
+        --heart-contour-color: rgba(0, 204, 20, 1);
+        --label-color: rgba(0, 0, 0, 1);
+        --gradient-bg-left: 0, #000 0 2px, transparent 2px 4px;
+        --gradient-bg-top: 90deg, #000 0 2px, transparent 2px 4px;
+        --gradient-bg-all: #007f0c, #004306;
+    }
+}
+
 /* В этом файле вы опишете значения переменных в разных цветовых схемах.
 Придерживайтесь такого именования классов:
 ✦ theme-dark — класс тёмной темы
