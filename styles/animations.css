@@ -7,26 +7,22 @@
     }
 }
 
-.theme-menu__button:disabled:before {
-    content: "▶";
-    position: absolute;
-    right: 20px;
-    opacity: 0.6;
-    animation: loading 0.5s infinite ease-in-out alternate;
-}
-
 .core {
     fill: transparent;
-    transition: fill 0s 0.03s;
+    transition: fill 0.3s 0.03s linear;
 }
 
 .main-body {
     fill: transparent;
-    transition: fill 0.3s;
+    transition: fill 0.3s linear;
 }
 
 .contour {
-    transition: fill 0.1s;
+    transition: fill 0.1s linear;
+}
+
+.sparks {
+    fill: transparent;
 }
 
 .like-icon:hover .core {
@@ -36,57 +32,63 @@
 
 .like-icon:hover .main-body {
     fill: var(--heart-contour-color);
-    transition: fill 0.3s 0.05s;
+    transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon:active .core {
     fill: var(--heart-sparks);
-    transition: fill 0.3s 0.03s;
+    transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
     fill: var(--heart-sparks);
-    transition: fill 0.3s 0.05s;
+    transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .core {
     fill: var(--heart-sparks);
-    transition: fill 0.3s 0.03s;
+    transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
     fill: var(--heart-sparks);
-    transition: fill 0.3s 0.05s;
+    transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
     fill: var(--heart-sparks);
-    transition: fill 0.3s 0.06s;
+    transition: fill 0.3s 0.06s linear;
 }
 
 @keyframes increase {
     from {
         transform: scale(1);
     }
-    to {
+    50% {
         transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
 .like-icon.is-liked .heart {
     transform-origin: center;
-    animation: increase 0.3s 0.1s ease-in backwards;
+    animation: increase 0.3s 0.1s ease-in;
 }
 
 @keyframes spark {
     from {
         fill: none;
     }
-    to {
+    50% {
         fill: var(--heart-sparks);
+    }
+    100% {
+        fill: none;
     }
 }
 
 .like-icon.is-liked .sparks {
-    animation: spark 0.3s 0.3s ease-in backwards;
+    animation: spark 0.3s 0.3s ease-in;
 }

@@ -1,13 +1,13 @@
 :root {
-    --inter: Inter-Variable;
+    --inter: Inter;
     --inter-width-text: 'wght' 339;
-    --inter-width-text-min: 'wght' 339;
-    --press_start: 'Press Start 2P';
+    --card-title-width-text: 'wght' 700;
+    --press_start: 'PressStart2P';
     --wght: 400;
     --slnt: 0;
     --border-color: rgba(0, 0, 0, 1);
     --bg-color: rgba(255, 255, 255, 1);
-    --bg-color-dialog: rgba(0, 0, 0, 1);
+    --bg-color-dialog: rgb( 0 0 1 / 0.75);
     --bg-color-animation: rgba(255, 255, 255, 1);
     --focus-color: rgba(0, 0, 0, 1);
     --label-color: rgba(255, 255, 255, 1);
@@ -15,6 +15,7 @@
     --heart-contour-color: rgba(0, 0, 0, 1);
     --heart-body: rgba(0, 0, 0, 1);
     --heart-sparks: rgba(255, 0, 0, 1);
+    --heart-core: rgba(255, 0, 0, 1);
     --gradient-bg-left: 0, #d3d3d3 0 2px, transparent 2px 4px;
     --gradient-bg-top: 90deg, #d3d3d3 0 2px, transparent 2px 4px;
     --gradient-bg-all: #e7e7e7 0.01%, #1a1a1a;
@@ -27,7 +28,6 @@
     --fluid-dialog-card--316-341: clamp(19.75rem, 10.6591rem + 45.4545vi, 21.3125rem);
     --fluid-card-316-371: clamp(20rem, 0rem + 100vi, 23.4375rem);
     --fluid-header-327-368: clamp(20.4375rem, 19.5352rem + 3.8498vi, 23rem);
-    --fluid-top-122-100: clamp(6.25rem, 8.1092rem + -2.0657vi, 7.625rem);
     --fluid-title-top-113-136: clamp(7.0625rem, 6.5563rem + 2.1596vi, 8.5rem);
     --fluid-description-7-20: clamp(0.4375rem, 0.1514rem + 1.2207vi, 1.25rem);
     --fluid-menu-19-24: clamp(1.1875rem, 1.0775rem + 0.4695vi, 1.5rem);

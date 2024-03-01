@@ -2,7 +2,7 @@
     --inter-width-text: 'wght' 405;
     --inter-width-text-min: 'wght' 493;
     --bg-color: rgba(0, 0, 0, 1);
-    --bg-color-animation: rgb(159, 248, 166);
+    --bg-color-animation: rgba(0, 204, 20, 1);
     --border-color: rgba(0, 204, 20, 1);
     --focus-color: rgba(0, 204, 20, 1);
     --accent-color: rgba(0, 204, 20, 1);
@@ -37,7 +37,7 @@
         --bg-color: rgba(0, 0, 0, 1);
         --border-color: rgba(0, 204, 20, 1);
         --focus-color: rgba(0, 204, 20, 1);
-        --bg-color-animation: rgb(159, 248, 166);
+        --bg-color-animation: rgba(0, 204, 20, 1);
         --accent-color: rgba(0, 204, 20, 1);
         --heart-contour-color: rgba(0, 204, 20, 1);
         --label-color: rgba(0, 0, 0, 1);
