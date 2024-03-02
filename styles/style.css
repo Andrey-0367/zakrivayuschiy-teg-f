@@ -401,4 +401,12 @@ dialog::backdrop {
     .dialog__card {
         inline-size: 257px;
     }
+<<<<<<< HEAD
 }
+=======
+
+    .card__text {
+        font-variation-settings: var(--main-font-width-text);
+    }
+}
+>>>>>>> ae413df1100798986bef1e91d618fcdd97cf6ce1
