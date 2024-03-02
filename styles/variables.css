@@ -1,10 +1,11 @@
 :root {
-    --inter: Inter;
-    --inter-width-text: 'wght' 339;
+    --main-font: Inter;
+    --main-font-width-text: 'wght' 400;
+    --main-font-text: 'wght' 340;
     --card-title-width-text: 'wght' 700;
-    --press_start: 'PressStart2P';
     --wght: 400;
     --slnt: 0;
+    --accent-font: 'PressStart2P';
     --border-color: rgba(0, 0, 0, 1);
     --bg-color: rgba(255, 255, 255, 1);
     --bg-color-dialog: rgb( 0 0 1 / 0.75);

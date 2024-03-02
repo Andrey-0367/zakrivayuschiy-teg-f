@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-block-start:100px;
     color: var(--accent-color);
-    font-family: var(--inter), sans-serif;
+    font-family: var(--main-font), sans-serif;
     writing-mode: horizontal-tb;
     background-image: repeating-linear-gradient(var(--gradient-bg-left)),
     repeating-linear-gradient(var(--gradient-bg-top)),
@@ -17,7 +17,7 @@
 
 @supports (font-variation-settings: normal) {
     .page {
-        font-family: var(--inter), sans-serif;
+        font-family: var(--main-font), sans-serif;
     }
 }
 
@@ -29,7 +29,7 @@
 .header__title {
     align-self: center;
     padding-block-start: var(--fluid-title-top-113-136);
-    font-family: var(--press_start), sans-serif;
+    font-family: var(--accent-font), sans-serif;
     font-weight: 400;
     font-size: var(--fluid-49-65);
     line-height: 1;
@@ -38,7 +38,7 @@
 .header__description {
     align-self: center;
     padding-block-start: var(--fluid-description-7-20);
-    font-family: var(--press_start), sans-serif;
+    font-family: var(--accent-font), sans-serif;
     font-weight: 400;
     font-size: var(--fluid-14-23);
     line-height: 23px;
@@ -66,7 +66,7 @@
 .theme-menu__button {
     border: none;
     opacity: 1;
-    font-family: var(--press_start), sans-serif;
+    font-family: var(--accent-font), sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
@@ -148,7 +148,7 @@
     gap: 25px;
     font-size: 18px;
     line-height: 21px;
-    font-variation-settings: var(--inter-width-text);
+    font-variation-settings: var(--main-font-text);
 }
 
 .card__image {
@@ -165,7 +165,7 @@
     z-index: 1;
     opacity: 0.5;
     color: var(--accent-color);
-    font-family: var(--press_start), sans-serif;
+    font-family: var(--accent-font), sans-serif;
     font-size: 14px;
     line-height: 14px;
     text-shadow: 0 0 2px var(--accent-color);
@@ -173,7 +173,8 @@
 
 @supports (-webkit-text-stroke: 1px var(--label-color)) {
     .card__image-label {
-        -webkit-text-stroke: 0.05em var(--label-color);
+        text-shadow: none;
+        -webkit-text-stroke: 1px var(--label-color);
     }
 }
 
@@ -267,7 +268,7 @@
 }
 
 .button__text {
-    font-family: var(--press_start), sans-serif;
+    font-family: var(--accent-font), sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 0.9;
@@ -314,7 +315,6 @@
 
 .footer__block {
     inline-size: var(--fluid-disketa-28-21);
-    mix-blend-mode: difference;
 }
 
 .dialog {
@@ -352,7 +352,7 @@ dialog:not([open]) {
 }
 
 .dialog__title-font {
-    font-family: var(--press_start), sans-serif;
+    font-family: var(--accent-font), sans-serif;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
@@ -391,15 +391,15 @@ dialog::backdrop {
         inline-size: var(--fluid-card-316-371);
     }
 
-    .card__text {
-        padding-inline-end: 28px;
-    }
-
     .dialog {
         inline-size: var(--fluid-dialog-card--316-341);
     }
 
     .dialog__card {
         inline-size: 257px;
+    }
+
+    .card__text {
+        font-variation-settings: var(--main-font-width-text);
     }
 }
