@@ -13,6 +13,8 @@
     font-variation-settings: "wght" var(--wght), "slnt" var(--slnt);
     block-size: 100%;
     inline-size: 100%;
+    align-items: center;
+    margin: 0 auto;
 }
 
 @supports (font-variation-settings: normal) {
@@ -114,6 +116,7 @@
 .content {
     padding-block-start: 100px;
     inline-size: 100%;
+    margin: 0;
 }
 
 .content__cards {
@@ -397,9 +400,5 @@ dialog::backdrop {
 
     .dialog__card {
         inline-size: 257px;
-    }
-
-    .card__text {
-        font-variation-settings: var(--main-font-width-text);
     }
 }

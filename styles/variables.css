@@ -1,7 +1,6 @@
 :root {
     --main-font: Inter;
-    --main-font-width-text: 'wght' 400;
-    --main-font-text: 'wght' 340;
+    --main-font-text: 'wght' 400;
     --card-title-width-text: 'wght' 700;
     --wght: 400;
     --slnt: 0;
