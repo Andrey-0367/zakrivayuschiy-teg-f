@@ -224,7 +224,7 @@
 .card__controls {
     display: flex;
     align-self: end;
-    block-size: 38px;
+    block-size: 36px;
     inline-size: 183px;
 }
 
