@@ -224,7 +224,7 @@
 .card__controls {
     display: flex;
     align-self: end;
-    block-size: 37px;
+    block-size: 38px;
     inline-size: 183px;
 }
 
@@ -250,7 +250,7 @@
 
 .card__like-button {
     position: relative;
-    padding-block-start: 7px;
+    padding-block-start: 5px;
     inline-size: 130px;
 }
 
