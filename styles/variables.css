@@ -1,13 +1,13 @@
 :root {
-    --main-font: Inter;
+    --main-font: Inter, sans-serif;
     --main-font-text: 'wght' 400;
     --card-title-width-text: 'wght' 700;
     --wght: 400;
     --slnt: 0;
-    --accent-font: 'PressStart2P';
+    --accent-font: 'PressStart2P', fantasy;
     --border-color: rgba(0, 0, 0, 1);
     --bg-color: rgba(255, 255, 255, 1);
-    --bg-color-dialog: rgb( 0 0 1 / 0.75);
+    --bg-color-dialog: rgb( 0 0 0 / 0.75);
     --bg-color-animation: rgba(255, 255, 255, 1);
     --focus-color: rgba(0, 0, 0, 1);
     --label-color: rgba(255, 255, 255, 1);
@@ -19,19 +19,18 @@
     --gradient-bg-left: 0, #d3d3d3 0 2px, transparent 2px 4px;
     --gradient-bg-top: 90deg, #d3d3d3 0 2px, transparent 2px 4px;
     --gradient-bg-all: #e7e7e7 0.01%, #1a1a1a;
-    --fluid-30-49: clamp(1.875rem, -5.0341rem + 34.5455vi, 3.0625rem);
-    --fluid-49-65: clamp(3.0625rem, 2.7104rem + 1.5023vi, 4.0625rem);
-    --fluid-14-23: clamp(0.875rem, 0.6769rem + 0.8451vi, 1.4375rem);
-    --fluid-371-696: clamp(23.1875rem, 16.0352rem + 30.5164vi, 43.5rem);
-    --fluid-dialog-341-353: clamp(21.3125rem, 21.0484rem + 1.1268vi, 22.0625rem);
-    --fluid-dialog-margin-236-381: clamp(14.75rem, 11.559rem + 13.615vi, 23.8125rem);
-    --fluid-dialog-card--316-341: clamp(19.75rem, 10.6591rem + 45.4545vi, 21.3125rem);
-    --fluid-card-316-371: clamp(20rem, 0rem + 100vi, 23.4375rem);
-    --fluid-header-327-368: clamp(20.4375rem, 19.5352rem + 3.8498vi, 23rem);
-    --fluid-title-top-113-136: clamp(7.0625rem, 6.5563rem + 2.1596vi, 8.5rem);
-    --fluid-description-7-20: clamp(0.4375rem, 0.1514rem + 1.2207vi, 1.25rem);
-    --fluid-menu-19-24: clamp(1.1875rem, 1.0775rem + 0.4695vi, 1.5rem);
-    --fluid-disketa-28-21: clamp(1.3125rem, 1.904rem + -0.6573vi, 1.75rem);
+    --header-hight: clamp(20.4375rem, 19.5352rem + 3.8498vi, 23rem);
+    --title-font-size-mobile: clamp(1.875rem, -5.0341rem + 34.5455vi, 3.0625rem);
+    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vi, 4.0625rem);
+    --title-padding: clamp(7.0625rem, 6.5563rem + 2.1596vi, 8.5rem);
+    --description-padding: clamp(0.4375rem, 0.1514rem + 1.2207vi, 1.25rem);
+    --description-font-size: clamp(0.875rem, 0.6769rem + 0.8451vi, 1.4375rem);
+    --card-width: clamp(23.1875rem, 16.0352rem + 30.5164vi, 43.5rem);
+    --dialog-width: clamp(21.3125rem, 21.0484rem + 1.1268vi, 22.0625rem);
+    --dialog-width-mobile: clamp(19.75rem, 10.6591rem + 45.4545vi, 21.3125rem);
+    --card-width-mobile: clamp(20rem, 0rem + 100vi, 23.4375rem);
+    --padding-menu: clamp(1.1875rem, 1.0775rem + 0.4695vi, 1.5rem);
+    --footer-width: clamp(1.3125rem, 1.904rem + -0.6573vi, 1.75rem);
 }
 
 

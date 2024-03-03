@@ -76,7 +76,7 @@
                 <button
                   aria-labelledby="unsplash"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -156,7 +156,7 @@
                 <button
                   aria-labelledby="excuses"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -232,7 +232,7 @@
                 <button
                   aria-labelledby="kid"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -303,7 +303,7 @@
                 <button
                   aria-labelledby="man"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -379,7 +379,7 @@
                 <button
                   aria-labelledby="children"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -455,7 +455,7 @@
                 <button
                   aria-labelledby="cat"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -529,7 +529,7 @@
                 <button
                   aria-labelledby="monkey"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -608,7 +608,7 @@
                 <button
                   aria-labelledby="mountain"
                   class="card__icon-button"
-                  type="submit"
+                  type="button"
                 >
                   <svg
                     class="like-icon"
@@ -673,21 +673,19 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog" id="dialog-id">
-        <article class="dialog__card">
-          <div class="dialog__title">
-            <svg class="dialog__block" viewBox="0 0 39 39">
-              <use href="svg/save.svg#floppy"></use>
-            </svg>
-            <span class="dialog__title-font">
-              Вставьте дискету, чтобы продолжить
-            </span>
-          </div>
-          <form>
-            <button class="button dialog__button" type="submit">
-              <span class="button__text button__text-dialog">ок</span>
-            </button>
-          </form>
-        </article>
+        <div class="dialog__title">
+          <svg class="dialog__block" viewBox="0 0 39 39">
+            <use href="svg/save.svg#floppy"></use>
+          </svg>
+          <span class="dialog__title-font">
+            Вставьте дискету, чтобы продолжить
+          </span>
+        </div>
+        <form method="dialog">
+          <button class="button dialog__button" type="submit">
+            <span class="button__text button__text-dialog">ок</span>
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>

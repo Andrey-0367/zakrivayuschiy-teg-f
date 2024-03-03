@@ -19,31 +19,31 @@
 
 @supports (font-variation-settings: normal) {
     .page {
-        font-family: var(--main-font), sans-serif;
+        font-family: var(--main-font);
     }
 }
 
 .header {
     min-block-size: 327px;
-    block-size: var(--fluid-header-327-368);
+    block-size: var(--header-hight);
 }
 
 .header__title {
     align-self: center;
-    padding-block-start: var(--fluid-title-top-113-136);
-    font-family: var(--accent-font), sans-serif;
+    padding-block-start: var(--title-padding);
+    font-family: var(--accent-font);
     font-weight: 400;
-    font-size: var(--fluid-49-65);
+    font-size: var(--title-font-size);
     line-height: 1;
 }
 
 .header__description {
     align-self: center;
-    padding-block-start: var(--fluid-description-7-20);
-    font-family: var(--accent-font), sans-serif;
+    padding-block-start: var(--description-padding);
+    font-family: var(--accent-font);
     font-weight: 400;
-    font-size: var(--fluid-14-23);
-    line-height: 23px;
+    font-size: var(--description-font-size);
+    line-height: 1;
     text-align: left;
     text-transform: uppercase;
 }
@@ -51,7 +51,7 @@
 .header__theme-menu {
     align-self: center;
     padding-inline-start: 7px;
-    padding-block-start: var(--fluid-menu-19-24);
+    padding-block-start: var(--padding-menu);
 }
 
 .theme-menu__list {
@@ -68,13 +68,13 @@
 .theme-menu__button {
     border: none;
     opacity: 1;
-    font-family: var(--accent-font), sans-serif;
+    font-family: var(--accent-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
     background-color: transparent;
-    transition: opacity 0.3s linear;
+    transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled {
@@ -102,7 +102,7 @@
     display: block;
     border-bottom: 2px solid var(--focus-color);
     opacity: 1;
-    transition: transform 0.3s, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scaleX(0);
     transform-origin: left;
 }
@@ -110,7 +110,6 @@
 .theme-menu__button:focus-visible::after {
     opacity: 0.6;
     transform: scaleX(1);
-    transform-origin: left;
 }
 
 .content {
@@ -133,7 +132,7 @@
     margin: 0;
     border: 2px solid var(--accent-color);
     background-color: var(--bg-color);
-    inline-size: var(--fluid-371-696);
+    inline-size: var(--card-width);
     max-inline-size: 700px;
 }
 
@@ -168,16 +167,17 @@
     z-index: 1;
     opacity: 0.5;
     color: var(--accent-color);
-    font-family: var(--accent-font), sans-serif;
+    font-family: var(--accent-font);
     font-size: 14px;
     line-height: 14px;
     text-shadow: 0 0 2px var(--accent-color);
 }
 
-@supports (-webkit-text-stroke: 1px var(--label-color)) {
+@supports((text-stroke: 1px var(--label-color)) or (-webkit-text-stroke: 1px var(--label-color))) {
     .card__image-label {
-        text-shadow: none;
         -webkit-text-stroke: 1px var(--label-color);
+        text-stroke: 1px var(--label-color);
+        text-shadow: none;
     }
 }
 
@@ -186,7 +186,7 @@
     object-fit: cover;
     object-position: center;
     inline-size: 100%;
-    block-size: var(--fluid-371-696);
+    block-size: var(--card-width);
 }
 
 .image__unsplash {
@@ -271,7 +271,7 @@
 }
 
 .button__text {
-    font-family: var(--accent-font), sans-serif;
+    font-family: var(--accent-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 0.9;
@@ -296,7 +296,6 @@
 
 .button:hover::before {
     transform: scaleX(1);
-    transform-origin: left;
 }
 
 .footer {
@@ -317,32 +316,26 @@
 }
 
 .footer__block {
-    inline-size: var(--fluid-disketa-28-21);
+    inline-size: var(--footer-width);
 }
 
 .dialog {
     position: fixed;
     inset: 0;
-    display: grid;
-    margin-block-start: var(--fluid-dialog-margin-236-381);
     border: 2px solid var(--border-color);
     background: var(--bg-color);
     max-inline-size: 353px;
-    inline-size: var(--fluid-dialog-341-353);
+    inline-size: var(--dialog-width);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-block-end: 26px;
+    padding-inline-start: 26px;
 }
 
 dialog:not([open]) {
     opacity: 0;
     pointer-events: none;
-}
-
-.dialog__card {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    gap: 30px;
-    padding-block-end: 13px;
-    inline-size: 293px;
 }
 
 .dialog__title {
@@ -355,7 +348,7 @@ dialog:not([open]) {
 }
 
 .dialog__title-font {
-    font-family: var(--accent-font), sans-serif;
+    font-family: var(--accent-font);
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
@@ -369,7 +362,7 @@ dialog:not([open]) {
 
 .dialog__button {
     block-size: 36px;
-    inline-size: 100%;
+    inline-size: 293px;
 }
 
 dialog::backdrop {
@@ -386,27 +379,27 @@ dialog::backdrop {
     }
 
     .header__title {
-        font-size: var(--fluid-30-49);
+        font-size: var(--title-font-size-mobile);
         line-height: 1.35;
     }
 
+    .header__description {
+        line-height: 1.4;
+    }
+
     .card {
-        inline-size: var(--fluid-card-316-371);
+        inline-size: var(--card-width-mobile);
     }
 
     .dialog {
-        inline-size: var(--fluid-dialog-card--316-341);
+        inline-size: var(--dialog-width-mobile);
     }
 
     .dialog__card {
         inline-size: 257px;
     }
-<<<<<<< HEAD
 }
-=======
 
-    .card__text {
-        font-variation-settings: var(--main-font-width-text);
-    }
-}
->>>>>>> ae413df1100798986bef1e91d618fcdd97cf6ce1
+
+
+

@@ -1,5 +1,6 @@
 :root.theme-light {
-    --main-font-text: 'wght' 340;
+    --main-font-text: 'wght' 400;
+    --card-title-width-text: 'wght' 700;
     --bg-color: rgba(255, 255, 255, 1);
     --bg-color-animation: rgba(255, 255, 255, 1);
     --border-color: rgba(0, 0, 0, 1);
@@ -14,7 +15,8 @@
 }
 
 :root.theme-dark {
-    --main-font-text: 'wght' 405;
+    --main-font-text: 'wght' 465;
+    --card-title-width-text: 'wght' 785;
     --bg-color: rgba(0, 0, 0, 1);
     --bg-color-animation: rgba(0, 204, 20, 1);
     --border-color: rgba(0, 204, 20, 1);
@@ -30,7 +32,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --main-font-text: 'wght' 405;
+        --main-font-text: 'wght' 465;
+        --card-title-width-text: 'wght' 785;
         --bg-color: rgba(0, 0, 0, 1);
         --bg-color-animation: rgba(0, 204, 20, 1);
         --border-color: rgba(0, 204, 20, 1);
